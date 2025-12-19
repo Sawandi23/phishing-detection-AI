@@ -120,7 +120,6 @@ ENV/
 env.bak/
 venv.bak/
 backend/venv/
-.env.*
 
 # Spyder project settings
 .spyderproject
@@ -164,7 +163,7 @@ cython_debug/
 *.npy
 *.npz
 
-# Data directories
+# Data directories and large data files
 data/
 dataset/
 datasets/
@@ -172,10 +171,11 @@ raw_data/
 processed_data/
 training_data/
 test_data/
-*.csv
-*.tsv
-*.dat
-*.parquet
+# Uncomment the following lines to ignore data files everywhere
+# *.csv
+# *.tsv
+# *.dat
+# *.parquet
 
 # TensorBoard logs
 logs/
@@ -194,7 +194,6 @@ mlruns/
 *.code-workspace
 *.swp
 *.swo
-*~
 .project
 .pydevproject
 .settings/
